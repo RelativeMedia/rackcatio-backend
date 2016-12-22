@@ -2,11 +2,11 @@
   "name": "rackcat-io-backend",
   "version": "0.1.0",
   "main": "app.js",
-  "engines" : {
+  "engines": {
     "node": ">=0.10.3 =6.9.1",
     "npm": "~3.0.0"
   },
-"dependencies": {
+  "dependencies": {
     "async": "^2.1.4",
     "lodash": "^4.17.2",
     "passport": "^0.3.2",
@@ -29,9 +29,8 @@
     "passport-yandex-token": "^2.1.0",
     "pluralize": "^3.1.0",
     "rc": "1.1.6",
-    "sails": "0.11.4",
+    "sails": "0.12.11",
     "sails-disk": "^0.10.10",
-    "sails-memory": "^0.10.5",
     "sails-mongo": "^0.12.2",
     "sails-service-cipher": "^3.2.1",
     "sails-service-hash": "^3.2.1",
@@ -39,12 +38,14 @@
     "sails-service-mailer": "^3.2.1"
   },
   "devDependencies": {
+    "axios": "^0.15.3",
     "barrels": "^1.6.4",
     "chai": "^3.5.0",
     "esdoc": "0.4.3",
+    "faker": "^3.1.0",
     "istanbul": "0.4.2",
     "mocha": "2.3.4",
-    "sails-memory": "0.10.5",
+    "sails-memory": "^0.10.5",
     "sinon": "1.17.2"
   },
   "scripts": {
