@@ -17,7 +17,8 @@ module.exports = {
     },
 
     password: {
-      type: 'string'
+      type: 'string',
+      required: true
     },
 
     email: {
@@ -46,7 +47,6 @@ module.exports = {
       let obj = this.toObject();
 
       delete obj.password;
-      delete obj.socialProfiles;
 
       return obj;
     }
