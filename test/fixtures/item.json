@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Test Item",
+    "metadata": {
+      "hostname": "testhostname"
+    },
+    "createdBy": 1,
+    "updatedBy": 1,
+    "rack": 1,
+    "comments": [1],
+    "subnets": [1],
+    "domains": [1]
+  }
+]

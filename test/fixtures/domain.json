@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Test Domain",
+    "domain": "test.com",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "comments": [6],
+    "subnet": 1
+  }
+]

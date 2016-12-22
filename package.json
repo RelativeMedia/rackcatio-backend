@@ -35,7 +35,8 @@
     "sails-service-mailer": "^3.2.1"
   },
   "devDependencies": {
-    "chai": "3.4.1",
+    "barrels": "^1.6.4",
+    "chai": "^3.5.0",
     "esdoc": "0.4.3",
     "istanbul": "0.4.2",
     "mocha": "2.3.4",
@@ -47,6 +48,7 @@
     "debug": "node debug app.js",
     "docs": "esdoc -c esdoc.json",
     "start": "node app.js",
-    "test": "istanbul cover _mocha"
+    "cover": "istanbul cover _mocha",
+    "test": "./node_modules/.bin/mocha"
   }
 }

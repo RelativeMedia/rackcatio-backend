@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "test item comment 1",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "item": 1
+  },
+  {
+    "comment": "test rack comment 1",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "rack": 1
+  },
+  {
+    "comment": "test location comment 1",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "location": 1
+  },
+  {
+    "comment": "test productkey comment 1",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "productkey": 1
+  },
+  {
+    "comment": "test subnet comment 1",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "subnet": 1
+  },
+  {
+    "comment": "test domain comment 1",
+    "createdBy": 1,
+    "updatedBy": 1,
+    "domain": 1
+  }
+]

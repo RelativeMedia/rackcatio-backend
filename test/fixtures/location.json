@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Test Location",
+    "metadata": {
+      "test": "foo"
+    },
+    "createdBy": 1,
+    "updatedBy": 1,
+    "comments": [3],
+    "racks": [1],
+    "subnets": [1]
+  }
+]

@@ -27,7 +27,7 @@ module.exports = {
     location: {
       model: 'Location'
     },
-    comment: {
+    comments: {
       collection: 'Comment',
       via: 'rack'
     },

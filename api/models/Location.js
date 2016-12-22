@@ -28,7 +28,7 @@ module.exports = {
       via: 'location'
     },
     racks: {
-      Collection: 'Rack',
+      collection: 'Rack',
       via: 'location'
     },
     subnets: {

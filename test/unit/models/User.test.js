@@ -22,7 +22,7 @@ describe('models:User', () => {
   it('Should remove user', done => {
     User
       .destroy({username: newUser.username})
-      .then(users => {
+      .then((users) => {
         assert.equal(users[0].username, newUser.username);
         done();
       })

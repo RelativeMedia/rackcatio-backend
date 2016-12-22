@@ -1,5 +1,4 @@
 "use strict";
-
 /**
  * User
  * @description :: Model for storing users
