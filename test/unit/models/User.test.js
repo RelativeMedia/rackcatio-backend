@@ -1,6 +1,6 @@
 "use strict";
 
-const assert = require('chai').assert;
+const should = require('chai').should();
 
 const newUser = {
   username: 'modelTest',
@@ -13,7 +13,7 @@ describe('models:User', () => {
     User
       .create(newUser)
       .then(user => {
-        assert.equal(user.username, newUser.username);
+        user.username.should.equal(newUser.username);
         done();
       })
       .catch(done);
@@ -23,7 +23,7 @@ describe('models:User', () => {
     User
       .destroy({username: newUser.username})
       .then((users) => {
-        assert.equal(users[0].username, newUser.username);
+        users[0].username.should.equal(newUser.username);
         done();
       })
       .catch(done);

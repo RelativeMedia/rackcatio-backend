@@ -4,11 +4,11 @@
 "use strict";
 const should = require('chai').should();
 describe('models:Comment', () => {
-  it('should have a single comment in the db', (done) => {
+  it('should have at least one comment in the db', (done) => {
     Comment
       .find()
       .then((comments) => {
-        comments.length.should.eql(fixtures.comment.length);
+        comments.length.should.be.at.least(1);
         comments[0].should.include.keys('comment', 'createdBy', 'createdAt', 'updatedBy');
       })
       .then(done)
