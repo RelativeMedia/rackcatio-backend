@@ -33,7 +33,6 @@ describe('models:Rack', () => {
   it('should delete a rack', (done) => {
     const newRack = {
       name: 'Test Rack 3',
-      rack: 1,
       createdBy: 1,
       updatedBy: 1
     };

@@ -26,24 +26,23 @@ before((done) => {
     });
 });
 
-let currentItem = {};
-
-beforeEach((done) => {
-  Item
-    .create({
-      name: faker.name.firstName()
-    })
-    .then((item) => {
-      currentItem = item;
-      done();
-    })
-    .catch((err) => {
-      sails.log.error(err);
-      return done(err);
-    });
-});
-
 describe('controllers:ItemController', () => {
+  let currentItem = {};
+  beforeEach((done) => {
+    Item
+      .create({
+        name: faker.name.firstName()
+      })
+      .then((item) => {
+        currentItem = item;
+        done();
+      })
+      .catch((err) => {
+        sails.log.error(err);
+        return done(err);
+      });
+  });
+
   it('should list all items', (done) => {
     axios
       .get('/item')
@@ -80,7 +79,7 @@ describe('controllers:ItemController', () => {
 
   it('should create a new item', (done) => {
     const newItem = {
-      name: 'test create item'
+      name: faker.name.firstName()
     };
     axios
       .post('/item', newItem)
@@ -99,21 +98,23 @@ describe('controllers:ItemController', () => {
   });
 
   it('should update an existing item', (done) => {
+    const updatedItem = {
+      name: faker.name.firstName()
+    };
+
     axios
-      .put('/item/' + currentItem.id, {
-        name: 'updated item'
-      })
+      .put('/item/' + currentItem.id, updatedItem)
       .then((res) => {
         res.status.should.eql(200);
         res.data.should.include.keys('code', 'message', 'data');
         res.data.code.should.eql('OK');
         res.data.message.should.eql('Operation is successfully executed');
         res.data.data.should.be.an('object');
-        res.data.data.name.should.eql('updated item');
+        res.data.data.name.should.eql(updatedItem.name);
         done();
       })
       .catch((err) => {
-        sails.log.error(err.response);
+        sails.log.error(err.response.data.data);
         return done(err);
       });
   });
