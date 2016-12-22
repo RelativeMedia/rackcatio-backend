@@ -7,6 +7,7 @@
 
 module.exports = {
   port: 1337,
+  appUrl: 'http://localhost:1337/v1',
   log: {
     level: 'verbose'
   },
